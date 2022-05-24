@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lightbox{
+            height: 0px;
+            width: 0px;
+            position: fixed;
+            overflow: hidden;
+            transition: 2s;
+        }
+        #lightbox:target{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            top: 25%;
+            left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <a href="#lightbox">LIGHTbox</a>
+    </div>
+    <div id="lightbox">
+        <a href="#">*</a>
+        <p>THIS IS ME.</p>
+        <div class="menu">
+			<ul>
+				<li><a href="../Home Page/index.html">Home</a></li>
+				<li><a href="../Gallery/gallery.html">Gallery</a></li>
+				<li><a href="../about us/about us.html">About Us</a></li>
+				<li><a href="../Contact Us/contact us.html">Contact</a></li>
+			</ul>
+		</div>
+    </div>
+</body>
+</html>
